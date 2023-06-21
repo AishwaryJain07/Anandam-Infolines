@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Registration</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+
+      .upper-section {
+        flex: 1;
+        background-color: #FFF593;
+        text-align: center;
+        animation: slide-up 1s ease-in-out;
+      }
+
+      .lower-section {
+        flex: 4;
+        display: flex;
+      }
+
+      .left-section {
+        flex: 2;
+        font-size: 18px;
+        background-color: #92dcf5;
+        padding: 20px;
+        animation: slide-left 1s ease-in-out;
+		animation-play-state: running;
+      }
+	  .left-section
+	  {
+		font-style:inherit;
+		font-size: 18px;
+
+	  }
+	  .right-section {
+		flex: 1;
+		background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6tK0lGoAIYv6Nqvq0Hf1ayIhy7c6PagjulA&usqp=CAU');
+		padding: 10px;
+		background-size: cover;
+		background-color: rgba(0, 0, 0, 0.05); /* Adjust the alpha value as needed (0.05 = 5% opacity) */
+		border: 1px solid black;
+	  }
+
+      form {
+        border: 4px solid black;
+        border-radius: 10px;
+        padding: 30px; /* Adjust the padding as desired */
+        margin: 20px; /* Create a gap between form and right section */
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+
+      button[type="submit"] {
+        background-color: rgb(0, 191, 255);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      button[type="submit"]:hover {
+        background-color: rgb(10, 212, 43);
+      }
+
+      button[type="submit"]:focus {
+        outline: none;
+        box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.5);
+      }
+
+      @keyframes slide-up {
+        0% {
+          transform: translateY(100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      @keyframes slide-left {
+        0% {
+          transform: translateX(-100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="upper-section">
+        <h1>Streamline Your Business with Anandam Infolines' </h1>
+		<h2>Professional Company Registration Services</h2>
+      </div>
+      <div class="lower-section">
+        <div class="left-section">
+          <p>Welcome to Anandam Infolines, your trusted partner for comprehensive company registration services. As a leading provider of financial solutions, we understand the significance of legal compliance and the advantages of establishing a registered company. With our expertise and experience, we simplify the company registration process, ensuring a seamless and hassle-free experience for aspiring business owners like you.</p>
+
+          <h2>Why Choose Anandam Infolines for Company Registration?</h2>
+          <ul>
+            <li><strong>Expert Guidance and Support:</strong> At Anandam Infolines, we have a team of seasoned professionals who possess in-depth knowledge of company registration procedures and legal requirements. We will guide you through every step of the process, offering valuable insights and personalized support to ensure a successful registration.</li>
+            <li><strong>Comprehensive Service Offering:</strong> Our company registration services cover a wide range of business entities, including Private Limited Companies, One Person Companies (OPCs), Limited Liability Companies, Foreign Companies, Nidhi Companies, NBFCs, Producers, Micro-Finance Institutions, Sec. 8 Companies, and more. Whatever your business structure, we have the expertise to handle it efficiently.</li>
+            <li><strong>Online Convenience:</strong> Embracing the digital era, Anandam Infolines offers online company registration, making the process even more convenient for you. Our streamlined online procedures save time, eliminate paperwork, and enable you to track the progress of your registration effortlessly.</li>
+            <li><strong>Compliance and Legal Expertise:</strong> Registering your company under the Companies Act, 2013 is a crucial step towards legal compliance. Our team ensures that your company registration adheres to all legal requirements set forth by the Ministry of Corporate Affairs (MCA). We help you navigate the intricacies of the Companies Act, ensuring your company is in full compliance with regulations.</li>
+          </ul>
+        </div>
+        <div class="right-section">
+          <form>
+            <h1>Let's Craft Your Business</h1>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" />
+            <br /><br />
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" />
+            <br /><br />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" />
+            <br /><br />
+            <textarea
+              name="text"
+              id="text"
+              cols="10"
+              rows="5"
+              placeholder="Write your Concern here"
+            ></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

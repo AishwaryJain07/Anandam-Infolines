@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Registration</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+
+      .upper-section {
+        flex: 1;
+        background-color: #FFF593;
+        text-align: center;
+        animation: slide-up 1s ease-in-out;
+      }
+
+      .lower-section {
+        flex: 4;
+        display: flex;
+      }
+
+      .left-section {
+        flex: 2;
+        background-color: #92dcf5;
+        padding: 20px;
+        animation: slide-left 1s ease-in-out;
+        animation-play-state: running;
+      }
+
+      .right-section {
+        flex: 1;
+        background-image: url('');
+        padding: 10px;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.05); /* Adjust the alpha value as needed (0.05 = 5% opacity) */
+        border: 1px solid black;
+      }
+
+      form {
+        border: 4px solid black;
+        border-radius: 10px;
+        padding: 30px; /* Adjust the padding as desired */
+        margin: 20px; /* Create a gap between form and right section */
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+
+      button[type="submit"] {
+        background-color: rgb(0, 191, 255);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      button[type="submit"]:hover {
+        background-color: rgb(10, 212, 43);
+      }
+
+      button[type="submit"]:focus {
+        outline: none;
+        box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.5);
+      }
+
+      h1 {
+        font-size: 32px;
+        margin: 10px 0;
+      }
+
+      h2 {
+        font-size: 24px;
+        margin: 5px 0;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 1.5;
+      }
+
+      .highlight {
+        font-weight: bold;
+        color: #2f4f4f;
+      }
+
+      @keyframes slide-up {
+        0% {
+          transform: translateY(100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      @keyframes slide-left {
+        0% {
+          transform: translateX(-100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="upper-section">
+        <h1>Anandam Infolines</h1>
+        <h2>Your Trusted Partner for Financial and Business Solutions</h2>
+      </div>
+      <div class="lower-section">
+        <div class="left-section">
+          <p><span class="highlight">Headquartered in Bengaluru</span>, the vibrant Silicon Valley of India, Anandam Infolines is a leading consultancy firm offering comprehensive financial and business solutions. With our deep industry expertise and client-centric approach, we strive to exceed expectations and deliver exceptional results. Here's why you should choose Anandam Infolines:</p>
+          <ol>
+            <li><span class="highlight">Wide Range of Services:</span> We provide a diverse range of services, including corporate finance, taxation, GST compliance, TDS filing, and more. Our experienced professionals ensure accurate and efficient solutions tailored to your specific needs.</li>
+            <li><span class="highlight">Client Satisfaction:</span> At Anandam Infolines, client satisfaction is our top priority. We go the extra mile to understand your requirements, provide prompt responses to your queries, and deliver outstanding service.</li>
+            <li><span class="highlight">Convenient Locations:</span> With branches strategically located in Bengaluru, Ramanagara, and Kanakapura, we are easily accessible and ready to assist you wherever you are.</li>
+            <li><span class="highlight">Expert Team:</span> Our team consists of highly skilled professionals with extensive knowledge in their respective domains. With their expertise, we deliver reliable and effective solutions to help you achieve your financial goals.</li>
+            <li><span class="highlight">Commitment to Excellence:</span> We are committed to delivering excellence in every interaction. Our focus on quality, accuracy, and compliance ensures that your financial matters are handled with the utmost professionalism.</li>
+          </ol>
+          <h2>Contact Anandam Infolines today and experience our exceptional financial and business consultancy services.</h2>
+          <p><span class="highlight">Tagline:</span> Empowering Your Financial Success.</p>
+        </div>
+        <div class="right-section">
+          <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" />
+            <br /><br />
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" />
+            <br /><br />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" />
+            <br /><br />
+            <textarea
+              name="text"
+              id="text"
+              cols="10"
+              rows="5"
+              placeholder="Write your Concern here"
+            ></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

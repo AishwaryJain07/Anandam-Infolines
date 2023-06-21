@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate Tax</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+
+      .upper-section {
+        flex: 1;
+        background-color: #FFF593;
+        text-align: center;
+        animation: slide-up 1s ease-in-out;
+        padding-top: 50px;
+      }
+
+      .upper-section h1 {
+        font-size: 36px;
+        color: #333;
+      }
+
+      .upper-section h2 {
+        font-size: 24px;
+        color: #555;
+      }
+
+      .lower-section {
+        flex: 4;
+        display: flex;
+      }
+
+      .left-section {
+        flex: 2;
+        background-color: #92dcf5;
+        padding: 20px;
+        animation: slide-left 1s ease-in-out;
+        animation-play-state: running;
+      }
+
+      .left-section p {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #333;
+      }
+
+      .left-section h2 {
+        font-size: 24px;
+        color: #333;
+      }
+
+      .right-section {
+        flex: 1;
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6tK0lGoAIYv6Nqvq0Hf1ayIhy7c6PagjulA&usqp=CAU');
+        padding: 10px;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.05);
+        border: 1px solid black;
+      }
+
+      form {
+        border: 4px solid black;
+        border-radius: 10px;
+        padding: 30px;
+        margin: 20px;
+        background-color: #f9f9f9;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 18px;
+        color: #333;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        font-size: 16px;
+      }
+
+      button[type="submit"] {
+        background-color: lightblue;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      button[type="submit"]:hover {
+        background-color: darkblue;
+      }
+
+      button[type="submit"]:focus {
+        outline: none;
+        box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.5);
+      }
+
+      @keyframes slide-up {
+        0% {
+          transform: translateY(100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      @keyframes slide-left {
+        0% {
+          transform: translateX(-100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="upper-section">
+        <h1>Corporate Tax</h1>
+        <h2>Empowering Businesses with Strategic Corporate Tax Solutions</h2>
+      </div>
+      <div class="lower-section">
+        <div class="left-section">
+          <p>Corporate tax compliance and optimization are crucial for businesses to ensure financial stability and growth. At Anandam Infolines, we offer professional corporate tax services to help you navigate the complex tax landscape. Here's what sets us apart:</p>
+          <h2>Expert Tax Advisors</h2>
+          <p>Our experienced tax professionals possess in-depth knowledge of corporate tax regulations and can guide you in managing tax compliance effectively.</p>
+          <h2>Tailored Tax Strategies</h2>
+          <p>We understand that every business is unique. Our team develops personalized tax strategies to optimize your corporate tax obligations and maximize tax efficiency.</p>
+          <h2>Comprehensive Tax Solutions</h2>
+          <p>From tax planning and structuring to tax return filing and advisory services, we provide end-to-end solutions to meet your corporate tax needs.</p>
+          <h2>Domestic and Foreign Taxation</h2>
+          <p>Whether you're a domestic or foreign company, we have the expertise to assist you in complying with the Indian corporate tax requirements.</p>
+          <h2>Proactive Tax Management</h2>
+          <p>We stay updated with the latest tax laws and amendments, ensuring that you benefit from potential tax incentives and deductions while remaining compliant.</p>
+          <p>Partner with Anandam Infolines to streamline your corporate tax obligations, minimize tax liabilities, and achieve long-term financial success.</p>
+        </div>
+        <div class="right-section">
+            <form>
+                <h1>Let's Craft Your Business</h1>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" />
+                <br /><br />
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone" />
+                <br /><br />
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" />
+                <br /><br />
+                <textarea
+                  name="text"
+                  id="text"
+                  cols="10"
+                  rows="5"
+                  placeholder="Write your Concern here"
+                ></textarea>
+                <button type="submit">Submit</button>
+              </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Registration</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+
+      .upper-section {
+        flex: 1;
+        background-color: #FFF593;
+        text-align: center;
+        animation: slide-up 1s ease-in-out;
+      }
+
+      .lower-section {
+        flex: 4;
+        display: flex;
+      }
+
+      .left-section {
+        flex: 2;
+        background-color: #92dcf5;
+        padding: 20px;
+        animation: slide-left 1s ease-in-out;
+        animation-play-state: running;
+      }
+
+      .right-section {
+        flex: 1;
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6tK0lGoAIYv6Nqvq0Hf1ayIhy7c6PagjulA&usqp=CAU');
+        padding: 10px;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.05);
+        border: 1px solid black;
+      }
+
+      form {
+        border: 4px solid black;
+        border-radius: 10px;
+        padding: 30px;
+        margin: 20px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+
+      button[type="submit"] {
+        background-color: rgb(0, 191, 255);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      button[type="submit"]:hover {
+        background-color: rgb(10, 212, 43);
+      }
+
+      button[type="submit"]:focus {
+        outline: none;
+        box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.5);
+      }
+
+      @keyframes slide-up {
+        0% {
+          transform: translateY(100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      @keyframes slide-left {
+        0% {
+          transform: translateX(-100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="upper-section">
+        <h1>Exclusive Offers for IDFC Bank Customers</h1>
+        <h2>Unlock Great Benefits with Anandam Infolines!</h2>
+      </div>
+      <div class="lower-section">
+        <div class="left-section">
+          <p><strong>Tagline:</strong> Unlock Your Business Potential with Anandam Infolines.</p>
+          <h2>Here's what we have in store for you:</h2>
+          <ul>
+            <li>Free MSME Registration/Free Import Export License: Get your business registered under MSME or obtain an Import Export License absolutely free of cost.</li>
+            <li>GST Registration at just Rs. 999/-: Avail GST registration for your business at a highly discounted price of Rs. 999/- only.</li>
+            <li>LLP Registration at just Rs. 4,499/-: Register your Limited Liability Partnership (LLP) at an exclusive price of Rs. 4,499/- (Government fees and Stamp duty at actuals).</li>
+            <li>Private Limited Company Registration at just Rs. 4,999/-: Establish your Private Limited Company at a special rate of Rs. 4,999/- (Government fees and Stamp duty at actuals).</li>
+            <li>Free GST Filing for 3 Months: Enjoy the benefit of free GST filing for the first three months after registration (applicable to clients who availed GST registration from Chhota CFO).</li>
+            <li>Class 3 DSC at Rs. 499/-: Secure your digital identity with a Class 3 Digital Signature Certificate (DSC) with a validity of 2 years, available at an exclusive price of Rs. 499/- only.</li>
+          </ul>
+          <h2>How to Redeem:</h2>
+          <ol>
+            <li>Visit our dedicated webpage for IDFC Bank offers at #<a href="#"></a></li>
+            <li>Register with us and avail the offer of your choice.</li>
+          </ol>
+        </div>
+        <div class="right-section">
+          <form>
+            <h1>Let's Craft Your Business</h1>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" />
+            <br /><br />
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" />
+            <br /><br />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" />
+            <br /><br />
+            <textarea
+              name="text"
+              id="text"
+              cols="10"
+              rows="5"
+              placeholder="Write your Concern here"
+            ></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

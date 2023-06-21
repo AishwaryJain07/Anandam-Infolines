@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TDS Return Filing Services</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+
+      .upper-section {
+        flex: 1;
+        background-color: #FFF593;
+        text-align: center;
+        animation: slide-up 1s ease-in-out;
+        padding: 20px;
+      }
+
+      .lower-section {
+        flex: 4;
+        display: flex;
+      }
+
+      .left-section {
+        flex: 2;
+        background-color: #92dcf5;
+        padding: 20px;
+        animation: slide-left 1s ease-in-out;
+        animation-play-state: running;
+        font-size: 18px;
+      }
+
+      .right-section {
+        flex: 1;
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6tK0lGoAIYv6Nqvq0Hf1ayIhy7c6PagjulA&usqp=CAU');
+        padding: 10px;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.05); /* Adjust the alpha value as needed (0.05 = 5% opacity) */
+        border: 1px solid black;
+      }
+
+      form {
+        border: 4px solid black;
+        border-radius: 10px;
+        padding: 30px; /* Adjust the padding as desired */
+        margin: 20px; /* Create a gap between form and right section */
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+
+      button[type="submit"] {
+        background-color: rgb(0, 191, 255);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      button[type="submit"]:hover {
+        background-color: rgb(10, 212, 43);
+      }
+
+      button[type="submit"]:focus {
+        outline: none;
+        box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.5);
+      }
+
+      @keyframes slide-up {
+        0% {
+          transform: translateY(100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      @keyframes slide-left {
+        0% {
+          transform: translateX(-100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="upper-section">
+        <h1>Efficient TDS Return Filing Services by Anandam Infolines</h1>
+        <h2>Tagline: Streamlined TDS Solutions for Hassle-Free Compliance</h2>
+      </div>
+      <div class="lower-section">
+        <div class="left-section">
+          <p>
+            <strong><h2>At Anandam Infolines</strong>, we understand the significance of accurate and timely TDS return filing for businesses. Here's why you should choose us for your TDS-related requirements:</h2>
+          </p>
+          <ol>
+            <li>
+              <strong>Expert Assistance:</strong> Our experienced professionals provide cost-effective solutions for TDS return filing, ensuring compliance with the Income Tax Act 1961. We handle all aspects, from e-filing to document submission and keeping you updated on tax-related updates.
+            </li>
+            <li>
+              <strong>Comprehensive Services:</strong> We cater to a wide range of businesses, including salaried employees, banks, consultants, and more, ensuring thorough compliance with TDS regulations.
+            </li>
+            <li>
+              <strong>Prerequisites Simplified:</strong> Our team simplifies the prerequisites for filing TDS returns, including obtaining a valid TAN, utilizing Return Preparation Utility (RPU), and validating with File Validation Utility (FVU).
+            </li>
+            <li>
+              <strong>Hassle-Free Process:</strong> We streamline the entire TDS return filing process, whether through electronic mode or physical mode, ensuring accuracy and adherence to timelines.
+            </li>
+            <li>
+              <strong>Ensuring Compliance:</strong> By choosing us, you contribute to the government's revenue source, avoid tax evasion, and minimize the risk of interest and penalties.
+            </li>
+          </ol>
+          <p>Partner with Anandam Infolines for efficient TDS return filing services and experience seamless compliance while maximizing your business's financial well-being.</p>
+        </div>
+        <div class="right-section">
+          <form>
+            <h1>Let's Craft Your Business</h1>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" />
+            <br /><br />
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" />
+            <br /><br />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" />
+            <br /><br />
+            <textarea
+              name="text"
+              id="text"
+              cols="10"
+              rows="5"
+              placeholder="Write your Concern here"
+            ></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

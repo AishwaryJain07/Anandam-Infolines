@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GST Compliance</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    .upper-section {
+      flex: 1;
+      background-color: #FFF593;
+      text-align: center;
+      animation: slide-up 1s ease-in-out;
+    }
+
+    .lower-section {
+      flex: 4;
+      display: flex;
+    }
+
+    .left-section {
+      flex: 2;
+      background-color: #92dcf5;
+      padding: 20px;
+      animation: slide-left 1s ease-in-out;
+      animation-play-state: running;
+    }
+
+    .right-section {
+      flex: 1;
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6tK0lGoAIYv6Nqvq0Hf1ayIhy7c6PagjulA&usqp=CAU');
+      padding: 10px;
+      background-size: cover;
+      background-color: rgba(0, 0, 0, 0.05); /* Adjust the alpha value as needed (0.05 = 5% opacity) */
+      border: 1px solid black;
+    }
+
+    form {
+      border: 4px solid black;
+      border-radius: 10px;
+      padding: 30px; /* Adjust the padding as desired */
+      margin: 20px; /* Create a gap between the form and right section */
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid black;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    button[type="submit"] {
+      background-color: rgb(0, 191, 255);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button[type="submit"]:hover {
+      background-color: rgb(10, 212, 43);
+    }
+
+    button[type="submit"]:focus {
+      outline: none;
+      box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.5);
+    }
+
+    .highlight {
+      color: #000000;
+      font-weight: bold;
+    }
+
+    .benefits {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+
+    .benefit-item {
+      margin-bottom: 10px;
+    }
+
+    @keyframes slide-up {
+      0% {
+        transform: translateY(100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slide-left {
+      0% {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="upper-section">
+    <h1>Ensure Seamless GST Compliance with Anandam Infolines</h1>
+    <h2>Tagline: Empowering Your Business with Seamless GST Compliance.</h2>
+  </div>
+  <div class="lower-section">
+    <div class="left-section">
+      <p>
+       <h3> Navigating the complexities of GST compliance can be overwhelming for businesses. At Anandam Infolines, we offer comprehensive GST compliance services to help you stay updated and compliant with the ever-changing regulations. Here's why you should choose us as your trusted partner.</h3>
+      </p>
+      <div class="benefits">
+        <div class="benefit-item">
+          <span class="highlight">1. Expert Guidance:</span> Our team of experienced professionals stays updated with the latest amendments and regulations, providing you with accurate and reliable guidance for GST compliance.
+        </div>
+        <div class="benefit-item">
+          <span class="highlight">2. Technology-driven Solutions:</span> We leverage cutting-edge technology to streamline the GST compliance process, ensuring accuracy and efficiency in filing returns and maintaining records.
+        </div>
+        <div class="benefit-item">
+          <span class="highlight">3. Comprehensive Support:</span> From GST registration and chart of accounts setup to inventory management and filing returns, we provide end-to-end support for all your compliance needs.
+        </div>
+        <div class="benefit-item">
+          <span class="highlight">4. Vendor and Customer Master Review:</span> We review and update vendor and customer masters, ensuring that GST registration numbers, HSN codes, and other relevant details are accurately recorded.
+        </div>
+        <div class="benefit-item">
+          <span class="highlight">5. Systems Transition:</span> We assist in the smooth transition to GST compliance, helping you update your systems and processes for seamless integration.
+        </div>
+      </div>
+    </div>
+    <div class="right-section">
+      <form>
+        <h1>Let's Craft Your Business</h1>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" />
+        <br /><br />
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" />
+        <br /><br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+        <br /><br />
+        <textarea
+          name="text"
+          id="text"
+          cols="10"
+          rows="5"
+          placeholder="Write your Concern here"
+        ></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>

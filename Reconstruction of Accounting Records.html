@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reconstruction of Accounting Records</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+
+      .upper-section {
+        flex: 1;
+        background-color: #FFF593;
+        text-align: center;
+        animation: slide-up 1s ease-in-out;
+      }
+
+      .lower-section {
+        flex: 4;
+        display: flex;
+      }
+
+      .left-section {
+        flex: 2;
+        background-color: #92dcf5;
+        padding: 20px;
+        animation: slide-left 1s ease-in-out;
+        animation-play-state: running;
+      }
+
+      .right-section {
+        flex: 1;
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6tK0lGoAIYv6Nqvq0Hf1ayIhy7c6PagjulA&usqp=CAU');
+        padding: 10px;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.05);
+        border: 1px solid black;
+      }
+
+      form {
+        border: 4px solid black;
+        border-radius: 10px;
+        padding: 30px;
+        margin: 20px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+
+      button[type="submit"] {
+        background-color: rgb(0, 191, 255);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      button[type="submit"]:hover {
+        background-color: rgb(10, 212, 43);
+      }
+
+      button[type="submit"]:focus {
+        outline: none;
+        box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.5);
+      }
+
+      @keyframes slide-up {
+        0% {
+          transform: translateY(100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      @keyframes slide-left {
+        0% {
+          transform: translateX(-100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="upper-section">
+        <h1>Reconstruction of Accounting Records</h1>
+        <h2>Tagline: Reconstruct. Realign. Reimagine with Anandam Infolines.</h2>
+      </div>
+      <div class="lower-section">
+        <div class="left-section">
+          <p>Welcome to Anandam Infolines, your trusted partner for the reconstruction of accounting records in India. We understand that maintaining accurate and up-to-date accounting records is essential for the growth and success of your business. If you find yourself in a situation where your accounting records need reconstruction, we are here to help you navigate through this process smoothly.</p>
+          <h2>Why Choose Anandam Infolines for Accounting Record Reconstruction?</h2>
+          <ol>
+            <li>
+              <strong>Professional Expertise:</strong> Our team of experienced accountants specializes in reconstructing accounting records for businesses of all sizes. With their expertise and attention to detail, they will meticulously analyze your financial statements and reconstruct your accounting records with precision.
+            </li>
+            <li>
+              <strong>Comprehensive Analysis:</strong> We go beyond simply reconstructing your accounting records. Our experts perform a thorough analysis of your balance sheet, income statement, and cash flow statements to identify any discrepancies and provide you with honest feedback regarding the financial health of your business.
+            </li>
+            <li>
+              <strong>Compliance and Accuracy:</strong> We understand the importance of maintaining accurate and compliant accounting records. Our team ensures that all reconstructed records adhere to the relevant accounting standards and regulations, giving you peace of mind and confidence in the reliability of your financial information.
+            </li>
+            <li>
+              <strong>Integrated Solutions:</strong> In addition to accounting record reconstruction, we offer comprehensive business solutions, including company registration services. Whether you are starting a new business or need assistance with legal and regulatory compliance, we have you covered.
+            </li>
+          </ol>
+        </div>
+        <div class="right-section">
+          <form>
+            <h1>Let's Craft Your Business</h1>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" />
+            <br /><br />
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" />
+            <br /><br />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" />
+            <br /><br />
+            <textarea
+              name="text"
+              id="text"
+              cols="10"
+              rows="5"
+              placeholder="Write your Concern here"
+            ></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

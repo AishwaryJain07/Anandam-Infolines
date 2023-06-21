@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLP Registration </title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+
+      .upper-section {
+        flex: 1;
+        background-color: #FFF593;
+        text-align: center;
+        animation: slide-up 1s ease-in-out;
+      }
+
+      .lower-section {
+        flex: 4;
+        display: flex;
+      }
+
+      .left-section {
+        flex: 2;
+        background-color: #92dcf5;
+        padding: 20px;
+        animation: slide-left 1s ease-in-out;
+        animation-play-state: running;
+      }
+
+      .right-section {
+        flex: 1;
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6tK0lGoAIYv6Nqvq0Hf1ayIhy7c6PagjulA&usqp=CAU');
+        padding: 10px;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.05); /* Adjust the alpha value as needed (0.05 = 5% opacity) */
+        border: 1px solid black;
+      }
+
+      form {
+        border: 4px solid black;
+        border-radius: 10px;
+        padding: 30px; /* Adjust the padding as desired */
+        margin: 20px; /* Create a gap between form and right section */
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+
+      button[type="submit"] {
+        background-color: rgb(0, 191, 255);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      button[type="submit"]:hover {
+        background-color: rgb(10, 212, 43);
+      }
+
+      button[type="submit"]:focus {
+        outline: none;
+        box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.5);
+      }
+
+      h1 {
+        font-size: 32px;
+        margin: 10px 0;
+      }
+
+      h2 {
+        font-size: 24px;
+        margin: 10px 0;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+      @keyframes slide-up {
+        0% {
+          transform: translateY(100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      @keyframes slide-left {
+        0% {
+          transform: translateX(-100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="upper-section">
+        <h1>LLP Registration with Anandam Infolines:</h1>
+        <h2>Streamline Your Business Structure</h2>
+      </div>
+      <div class="lower-section">
+        <div class="left-section">
+          <p><strong>Simplifying LLP Registration for Business Success</strong> </p>
+          <p>Welcome to Anandam Infolines, your trusted partner in the seamless registration of Limited Liability Partnerships (LLPs). We understand that choosing the right business structure is crucial for the success and growth of your venture. With our professional services, we aim to simplify the LLP registration process, ensuring that you can focus on building your business while we take care of the legal formalities.</p>
+          <h2>Why Choose LLP?</h2>
+          <ul>
+            <li><strong>Limited Liability:</strong> LLP provides the partners with limited liability protection, safeguarding their personal assets from the debts and liabilities of the business.</li>
+            <li><strong>Separate Legal Entity:</strong> An LLP is a separate legal entity, distinct from its partners. It can enter into contracts, own property, and conduct business in its own name.</li>
+            <li><strong>Perpetual Succession:</strong> Unlike traditional partnerships, LLPs can continue their existence even in the event of a partner's death, retirement, or insolvency, ensuring business continuity.</li>
+            <li><strong>Flexible Capital Structure:</strong> LLPs offer flexibility in terms of capital contribution, allowing partners to invest according to their agreed terms and preferences.</li>
+            <li><strong>Reduced Compliance Requirements:</strong> LLPs have lower compliance burdens compared to other business structures, resulting in simplified administrative procedures and reduced costs.</li>
+          </ul>
+        </div>
+        <div class="right-section">
+          <form>
+            <h1>Let's Craft Your Business</h1>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" />
+            <br /><br />
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" />
+            <br /><br />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" />
+            <br /><br />
+            <textarea
+              name="text"
+              id="text"
+              cols="10"
+              rows="5"
+              placeholder="Write your Concern here"
+            ></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

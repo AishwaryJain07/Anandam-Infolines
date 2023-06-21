@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookkeeping Services</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    .upper-section {
+      flex: 1;
+      background-color: #FFF593;
+      text-align: center;
+      animation: slide-up 1s ease-in-out;
+    }
+
+    .lower-section {
+      flex: 4;
+      display: flex;
+    }
+
+    .left-section {
+      flex: 2;
+      background-color: #92dcf5;
+      padding: 20px;
+      animation: slide-left 1s ease-in-out;
+      animation-play-state: running;
+    }
+
+    .right-section {
+      flex: 1;
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6tK0lGoAIYv6Nqvq0Hf1ayIhy7c6PagjulA&usqp=CAU');
+      padding: 10px;
+      background-size: cover;
+      background-color: rgba(0, 0, 0, 0.05);
+      border: 1px solid black;
+    }
+
+    form {
+      border: 4px solid black;
+      border-radius: 10px;
+      padding: 30px;
+      margin: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid black;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    button[type="submit"] {
+      background-color: rgb(0, 191, 255);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button[type="submit"]:hover {
+      background-color: rgb(10, 212, 43);
+    }
+
+    button[type="submit"]:focus {
+      outline: none;
+      box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.5);
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .benefits-list {
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      padding-left: 20px;
+    }
+
+    @keyframes slide-up {
+      0% {
+        transform: translateY(100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slide-left {
+      0% {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="upper-section">
+      <h1>Bookkeeping Services: Keeping Your Finances in Order</h1>
+      <h2>Tagline: Streamline Your Finances with Anandam Infolines.</h2>
+    </div>
+    <div class="lower-section">
+      <div class="left-section">
+        <p>Welcome to Anandam Infolines, your trusted partner for professional bookkeeping services in India. We understand that managing your business's financial transactions and records can be overwhelming, especially when you have numerous other responsibilities to handle. That's why we offer reliable and accurate bookkeeping services to help alleviate your burden and ensure your finances are in order.</p>
+        <h2>Why Choose Anandam Infolines for Your Bookkeeping Needs?</h2>
+        <ol class="benefits-list">
+          <li>Expertise and Precision: Our team of experienced bookkeepers has a keen eye for detail and a deep understanding of bookkeeping principles. We meticulously track your payables, receivables, and other financial activities, ensuring accuracy and compliance.</li>
+          <li>Dedicated Partnership: We strive to build a lasting relationship with you and your company. Our bookkeepers work closely with you to understand your unique business requirements and provide tailored solutions that fit your needs.</li>
+          <li>Cost and Time Savings: Outsourcing your bookkeeping services to us allows you to focus on core business operations while saving valuable time and resources. With our efficient processes and technology-driven approach, we ensure timely and cost-effective bookkeeping services.</li>
+          <li>Industry Expertise: We have a team of expert bookkeepers who specialize in various industries. Whether you run a small business or a medium-sized enterprise, we have the knowledge and expertise to handle your industry-specific bookkeeping needs.</li>
+        </ol>
+      </div>
+      <div class="right-section">
+        <form>
+          <h1>Let's Craft Your Business</h1>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" />
+          <br /><br />
+          <label for="phone">Phone:</label>
+          <input type="text" id="phone" name="phone" />
+          <br /><br />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+          <br /><br />
+          <textarea
+            name="text"
+            id="text"
+            cols="10"
+            rows="5"
+            placeholder="Write your Concern here"
+          ></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

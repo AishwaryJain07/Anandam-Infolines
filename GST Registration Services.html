@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GST Registration Services</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    .upper-section {
+      flex: 1;
+      background-color: #FFF593;
+      text-align: center;
+      animation: slide-up 1s ease-in-out;
+    }
+
+    .lower-section {
+      flex: 4;
+      display: flex;
+    }
+
+    .left-section {
+      flex: 2;
+      background-color: #92dcf5;
+      padding: 20px;
+      animation: slide-left 1s ease-in-out;
+      animation-play-state: running;
+    }
+
+    .right-section {
+      flex: 1;
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6tK0lGoAIYv6Nqvq0Hf1ayIhy7c6PagjulA&usqp=CAU');
+      padding: 10px;
+      background-size: cover;
+      background-color: rgba(0, 0, 0, 0.05); /* Adjust the alpha value as needed (0.05 = 5% opacity) */
+      border: 1px solid black;
+    }
+
+    form {
+      border: 4px solid black;
+      border-radius: 10px;
+      padding: 30px; /* Adjust the padding as desired */
+      margin: 20px; /* Create a gap between form and right section */
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid black;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    button[type="submit"] {
+      background-color: rgb(0, 191, 255);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button[type="submit"]:hover {
+      background-color: rgb(10, 212, 43);
+    }
+
+    button[type="submit"]:focus {
+      outline: none;
+      box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.5);
+    }
+
+    h1, h2 {
+      font-size: 28px;
+      margin: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    .tagline {
+      font-size: 20px;
+      font-style: italic;
+      margin-top: 20px;
+    }
+
+    @keyframes slide-up {
+      0% {
+        transform: translateY(100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slide-left {
+      0% {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="upper-section">
+      <h1>Streamline Your Business with Hassle-free GST Registration Services</h1>
+      <p class="tagline">Tagline: Simplifying GST Registration for Business Growth.</p>
+      
+    </div>
+    <div class="lower-section">
+      <div class="left-section">
+        <h2>At Anandam Infolines, we understand the importance of a seamless GST registration process for your business.</h2>
+        <p>Expert Guidance: Our professionals have in-depth knowledge of the GST registration process, ensuring that every step is handled with precision and accuracy.</p>
+        <p>Online Convenience: Say goodbye to tedious paperwork! With our online GST registration process, you can easily complete the necessary formalities without any hassle.</p>
+        <p>Timely Support: We assist you in obtaining the provisional ID and password required for the GST registration process, ensuring a smooth and efficient transition.</p>
+        <p>Comprehensive Documentation: We help you gather and submit all the required documents in the digital format as per the guidelines, ensuring a hassle-free registration experience.</p>
+        <h2>Who Needs GST Registration?</h2>
+        <ul>
+          <li>Businesses operating in India with an aggregate turnover exceeding the threshold limit of 20 lakh.</li>
+          <li>E-commerce operators and individuals supplying goods or services through them.</li>
+          <li>Agents of suppliers and businesses with branches in multiple states or multiple business verticals within a state.</li>
+          <li>Entities previously registered under VAT, Excise Laws, or Service Tax Laws.</li>
+          <li>Individuals providing online information and database access services from outside India to registered taxable persons in India.</li>
+        </ul>
+        <p>Unlock the benefits of GST registration with Anandam Infolines. Partner with us today and experience a seamless registration process that ensures compliance and growth for your business.</p>
+        
+      </div>
+      <div class="right-section">
+        <form>
+          <h1>Let's Craft Your Business</h1>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" />
+          <br /><br />
+          <label for="phone">Phone:</label>
+          <input type="text" id="phone" name="phone" />
+          <br /><br />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+          <br /><br />
+          <textarea
+            name="text"
+            id="text"
+            cols="10"
+            rows="5"
+            placeholder="Write your Concern here"
+          ></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
